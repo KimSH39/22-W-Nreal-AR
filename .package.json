@@ -1,0 +1,21 @@
+{
+  "name": "smartthings-open-close-lighting",
+  "version": "0.0.1",
+  "description": "A simple example automation app that turns lights on when a door opens and off when it closes.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "@smartthings/smartapp": "^3.0.1"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/hello-express"
+  },
+  "license": "Apache-2.0",
+  "keywords": ["node", "glitch", "express", "smartthings", "smartapp"]
+}
