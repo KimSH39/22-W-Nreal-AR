@@ -12,10 +12,5 @@
   },
   "engines": {
     "node": "8.x"
-  },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/hello-express"
-  },
-  "license": "Apache-2.0",
-  "keywords": ["node", "glitch", "express", "smartthings", "smartapp"]
+  }
 }
