@@ -1,12 +1,11 @@
 {
   "Tap to set": "Tap to set",
-  "pages.mainPage.name": "TV On/Off",
-  "pages.mainPage.sections.sensors.name": "When something opens or closes",
-  "pages.mainPage.settings.sensor.name": "Select an open/close sensor",
-  "pages.mainPage.sections.lights.name": "Turn on and off these lights",
-  "pages.mainPage.settings.lights.name": "Select lights & switches",
-
-  "pages.mainPage.settings.Samsung M5 (27).name": "Which TV",
-  "pages.mainPage.settings.forecastInterval.options.on.name": "On",
-  "pages.mainPage.settings.forecastInterval.options.off.name": "Off"
+  "pages.mainPage.name": "UXM app",
+  "pages.mainPage.sections.Samsung M5 (27).name": "Which TV",
+  "pages.mainPage.sections.control.name": "TV control",
+  "pages.mainPage.settings.numSelect.name": "TV power",
+  "pages.mainPage.settings.audioVolume.name": "TV volume",
+  "pages.mainPage.settings.numSelect.options.on.name": "Power ON",
+  "pages.mainPage.settings.numSelect.options.Off.name": "Power OFF",
+  "pages.mainPage.settings.monitor.name": "TV"
 }
