@@ -6,6 +6,6 @@
   "pages.mainPage.settings.numSelect.name": "TV power",
   "pages.mainPage.settings.audioVolume.name": "TV volume",
   "pages.mainPage.settings.numSelect.options.on.name": "Power ON",
-  "pages.mainPage.settings.numSelect.options.Off.name": "Power OFF",
+  "pages.mainPage.settings.numSelect.options.off.name": "Power OFF",
   "pages.mainPage.settings.monitor.name": "TV"
 }
