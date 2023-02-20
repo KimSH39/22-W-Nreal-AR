@@ -1,0 +1,11 @@
+{
+  "Tap to set": "Tap to set",
+  "pages.mainPage.name": "UXM app",
+  "pages.mainPage.sections.Samsung M5 (27).name": "Which TV",
+  "pages.mainPage.sections.control.name": "TV control",
+  "pages.mainPage.settings.numSelect.name": "TV power",
+  "pages.mainPage.settings.audioVolume.name": "TV volume",
+  "pages.mainPage.settings.numSelect.options.on.name": "Power ON",
+  "pages.mainPage.settings.numSelect.options.Off.name": "Power OFF",
+  "pages.mainPage.settings.monitor.name": "TV"
+}
