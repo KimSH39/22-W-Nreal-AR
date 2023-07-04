@@ -47,7 +47,7 @@ namespace NRKernal.NRExamples
         /// <param name="eventData"> Current event data.</param>
         public void OnPointerClick(PointerEventData eventData)
         {
-            m_MeshRender.material.color = Color.blue;
+            m_MeshRender.material.color = Color.red;
 
             string jsonData = "{\"commands\":[{\"component\":\"main\",\"capability\":\"audioVolume\",\"command\":\"volumeUp\",\"arguments\":[],\"name\":\"volumeUp\"}]}";
             string accessToken = "65cb880b-592a-4850-9bbf-ae1403463ef9";

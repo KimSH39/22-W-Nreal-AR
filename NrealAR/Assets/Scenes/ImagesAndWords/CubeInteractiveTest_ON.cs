@@ -7,6 +7,7 @@
 * 
 *****************************************************************************/
 
+using System.Collections.Specialized;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Networking;
@@ -19,11 +20,13 @@ namespace NRKernal.NRExamples
         /// <summary> The mesh render. </summary>
         private MeshRenderer m_MeshRender;
         private Data data;
+        private RectTransform rectTransform;
 
         /// <summary> Awakes this object. </summary>
         void Awake()
         {
             m_MeshRender = transform.GetComponent<MeshRenderer>();
+            rectTransform = GetComponent<RectTransform>();
         }
 
         void Start()
@@ -47,38 +50,40 @@ namespace NRKernal.NRExamples
         /// <param name="eventData"> Current event data.</param>
         public void OnPointerClick(PointerEventData eventData)
         {
-            m_MeshRender.material.color = Color.yellow;
 
-            string jsonData = "{\"commands\":[{\"component\":\"main\",\"capability\":\"switch\",\"command\":\"on\",\"arguments\":[],\"name\":\"on\"}]}";
-            string accessToken = "65cb880b-592a-4850-9bbf-ae1403463ef9";
-            string url = "https://api.smartthings.com/v1/devices/d4cf4e04-7edf-f983-36bf-0c7ae155cf24/commands";
+                m_MeshRender.material.color = Color.red;
 
-            var request = new UnityWebRequest(url, "POST");
-            request.uploadHandler = new UploadHandlerRaw(System.Text.Encoding.UTF8.GetBytes(jsonData));
-            request.downloadHandler = new DownloadHandlerBuffer();
-            request.SetRequestHeader("Content-Type", "application/json");
-            request.SetRequestHeader("Authorization", "Bearer " + accessToken);
+                string jsonData = "{\"commands\":[{\"component\":\"main\",\"capability\":\"switch\",\"command\":\"on\",\"arguments\":[],\"name\":\"on\"}]}";
+                string accessToken = "65cb880b-592a-4850-9bbf-ae1403463ef9";
+                string url = "https://api.smartthings.com/v1/devices/d4cf4e04-7edf-f983-36bf-0c7ae155cf24/commands";
 
-            UnityWebRequestAsyncOperation asyncOperation = request.SendWebRequest();
-            asyncOperation.completed += delegate
-            {
-                if (request.isNetworkError || request.isHttpError)
+                var request = new UnityWebRequest(url, "POST");
+                request.uploadHandler = new UploadHandlerRaw(System.Text.Encoding.UTF8.GetBytes(jsonData));
+                request.downloadHandler = new DownloadHandlerBuffer();
+                request.SetRequestHeader("Content-Type", "application/json");
+                request.SetRequestHeader("Authorization", "Bearer " + accessToken);
+
+                UnityWebRequestAsyncOperation asyncOperation = request.SendWebRequest();
+                asyncOperation.completed += delegate
                 {
-                    Debug.LogError(request.error);
-                }
-                else
-                {
-                    Debug.Log("Request completed successfully!");
-                    request.Dispose();
-                }
-            };
-        }
+                    if (request.isNetworkError || request.isHttpError)
+                    {
+                        Debug.LogError(request.error);
+                    }
+                    else
+                    {
+                        Debug.Log("Request completed successfully!");
+                        request.Dispose();
+                    }
+                };
+            }
 
         /// <summary> when pointer hover, set the cube color to green. </summary>
         /// <param name="eventData"> Current event data.</param>
         public void OnPointerEnter(PointerEventData eventData)
         {
             m_MeshRender.material.color = Color.green;
+
         }
 
         /// <summary> when pointer exit hover, set the cube color to white. </summary>

@@ -4,5 +4,29 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/UXM_TVcontrol.unity
+    guid: f96834e36bfd1604da06a85e4a7797f1
+  - enabled: 0
+    path: Assets/save.unity
+    guid: f5667c20e9587ba41893db80b6fe1c57
+  - enabled: 0
+    path: Assets/one0411.unity
+    guid: f6c0fe84792d4b74d92ae77d1eefc061
+  - enabled: 0
+    path: Assets/NRSDKExperimental/Demos/FirstPersonViewStreamingCast.unity
+    guid: cea9a23c5135fb0419a3c65aa6d1a01d
+  - enabled: 0
+    path: Assets/NRSDK/Demos/ImageTracking.unity
+    guid: cae4e384337e206419d07ea80c82ee12
+  - enabled: 0
+    path: Assets/0502.unity
+    guid: 24ba8a099cb61344abb3c33b4dbfe9ae
+  - enabled: 0
+    path: Assets/NRSDK/Demos/RGBCamera.unity
+    guid: 993f597e755bea3458ddb3a66c40bdd2
+  - enabled: 1
+    path: Assets/0621.unity
+    guid: 10ba43701c9f7b945ba7c10a95f6687e
   m_configObjects: {}

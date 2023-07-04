@@ -16,6 +16,7 @@ MonoBehaviour:
   ImageTrackingMode: 1
   TrackingImageDatabase: {fileID: 11400000, guid: 1f50acd0daea13047a1842ab4c8a7494, type: 2}
   EnableNotification: 0
+  ForceKillWhileGlassSwitchMode: 1
   GlassesErrorTipPrefab: {fileID: 0}
   TrackingModeChangeTipPrefab: {fileID: 0}
-  UseMultiThread: 1
+  ProjectConfig: {fileID: 11400000, guid: c66f5f1413c2e471aa0c410731aa0a78, type: 2}
